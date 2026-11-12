@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Profesional | Redes, Soporte & Desarrollo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#inicio" class="logo">Coyo<span>Tech</span></a>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#contacto" class="btn-nav">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <span class="badge">Redes • Soporte Técnico • Desarrollo Web</span>
+      <h1>Construyo una infraestructura segura y soluciones digitales</h1>
+      <p>Administrador de redes y soporte técnico con enfoque en desarrollo web y automatización.</p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+        <a href="docs/manuel.docx" download="CV_Manuel_Medina.pdf" class="btn-secondary">Descargar CV</a>
+      </div>
+    </section>
+
+    
+        <section id="proyectos" class="section">
+      <h2>Proyectos Destacados</h2>
+      <div class="grid">
+        <article class="card card-project" onclick="abrirModal('red')">
+          <div>
+            <span class="tag">Prioridad Alta</span>
+            <h3>01. Infraestructura de red empresarial</h3>
+            <p>Topología LAN, VLANs, firewall FortiGate/pfSense y VPN entre sedes con documentación completa.</p>
+          </div>
+          <span class="card-link">Ver arquitectura y detalles →</span>
+        </article>
+
+        <article class="card card-project" onclick="abrirModal('soporte')">
+          <div>
+            <span class="tag">Help Desk</span>
+            <h3>02. Sistema de soporte técnico</h3>
+            <p>Gestión de incidencias, inventario de equipos y seguimiento de tickets implementado con GLPI.</p>
+          </div>
+          <span class="card-link">Ver arquitectura y detalles →</span>
+        </article>
+
+        <article class="card card-project" onclick="abrirModal('iot')">
+          <div>
+            <span class="tag">IoT & Hardware</span>
+            <h3>03. Proyecto IoT Coyosatélite</h3>
+            <p>Monitoreo ambiental con ESP32, sensores y transmisión de datos en tiempo real vía MQTT.</p>
+          </div>
+          <span class="card-link">Ver arquitectura y detalles →</span>
+        </article>
+      </div>
+    </section>
+    <section id="sobre-mi" class="section">
+      <h2>Sobre mí</h2>
+      <div class="about-box">
+        <p>Soy un estdiante egresado en Administración de Redes y Comunicaciones con enfoque práctico en soporte técnico, seguridad informática y desarrollo web. Me apasiona diseñar infraestructuras estables, documentar procesos claros y crear herramientas digitales propias que resuelvan problemas reales.</p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section">
+      <h2>Habilidades Técnicas</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Redes & Infraestructura</h3>
+          <ul class="skill-list">
+            <li>Topologías LAN / WAN y Subnetting</li>
+            <li>VLANs, Routing y Switching</li>
+            <li>Firewalls (pfSense / FortiGate) y VPN</li>
+            <li>Cableado estructurado y diagnóstico</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Soporte & Sistemas</h3>
+          <ul class="skill-list">
+            <li>Mantenimiento preventivo y correctivo</li>
+            <li>Administración Windows y Linux</li>
+            <li>Gestión de tickets e inventario (GLPI)</li>
+            <li>Auditoría básica y hardening de equipos</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Desarrollo & IoT</h3>
+          <ul class="skill-list">
+            <li>HTML5, CSS3 y JavaScript</li>
+            <li>Python y automatización básica</li>
+            <li>Microcontroladores (ESP32 / Arduino)</li>
+            <li>Protocolo MQTT y control de versiones Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section">
+      <h2>Experiencia y Formación</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">Actualidad</span>
+          <h3>Soporte Técnico y Consultoría Independiente</h3>
+          <p>Mantenimiento de equipos de cómputo, diagnóstico de fallas, configuración de redes locales, desarrollo web a medida y evaluaciones básicas de seguridad para clientes.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">2025</span>
+          <h3>Egresado en Administración de Redes y Comunicaciones</h3>
+          <p>Formación técnica especializada en diseño de redes empresariales, administración de servidores, seguridad perimetral y telecomunicaciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <div class="contact-box">
+        <p>¿Buscas apoyo en redes, soporte técnico o desarrollo web? Conversemos.</p>
+        <div class="contact-links">
+          <a href="mailto:manuelpol.131313@gmail.com" class="btn-primary">Enviar Correo</a>
+          <a href="https://linkedin.com/in/manuel-medina-08348318b/" target="_blank" class="btn-secondary">LinkedIn</a>
+          <a href="https://github.com/Santocoyotin" target="_blank" class="btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 CoyoTech — Todos los derechos reservados.</p>
+  </footer>
+  </main>
+   <div id="proyectoModal" class="modal" onclick="cerrarModalFondo(event)">
+    <div class="modal-content">
+      <span class="close-btn" onclick="cerrarModal()">&times;</span>
+      <span id="modalTag" class="tag">Categoría</span>
+      <h3 id="modalTitulo" style="margin-top: 0.8rem; font-size: 1.5rem;">Título del Proyecto</h3>
+      <div id="modalTech" class="modal-tech"></div>
+      <p id="modalDesc" style="color: var(--text-muted);"></p>
+      <ul id="modalLista" class="modal-list"></ul>
+      <a id="modalRepo" href="https://github.com" target="_blank" class="btn-primary" style="display: inline-block;">Ver documentación / Repo</a>
+    </div>
+  </div>
+
+  <script>
+    const datosProyectos = {
+      red: {
+        tag: "Prioridad Alta • Redes",
+        titulo: "01. Infraestructura de red empresarial",
+        tech: ["VLANs", "pfSense / FortiGate", "VPN Site-to-Site", "Subnetting", "Documentación"],
+        desc: "Diseño e implementación de una red corporativa segmentada para garantizar seguridad, disponibilidad y control de tráfico entre departamentos.",
+        puntos: [
+          "Segmentación de red mediante VLANs para Administración, Soporte, Servidores e Invitados.",
+          "Configuración de reglas de firewall perimetral y filtrado de tráfico.",
+          "Túnel VPN seguro para interconectar sucursales remotas.",
+          "Diagrama de topología lógica/física y tabla de direccionamiento IP documentada."
+        ]
+      },
+      soporte: {
+        tag: "Help Desk • Gestión IT",
+        titulo: "02. Sistema de soporte técnico (GLPI)",
+        tech: ["GLPI", "Linux / Windows", "Inventario IT", "Gestión de Tickets", "SLA"],
+        desc: "Plataforma centralizada para la mesa de ayuda técnica, permitiendo controlar activos informáticos y tiempos de respuesta ante incidencias.",
+        puntos: [
+          "Flujo completo de apertura, asignación, escalamiento y cierre de tickets.",
+          "Registro automatizado de inventario de hardware y software.",
+          "Panel de métricas para analizar incidencias recurrentes y tiempos de solución."
+        ]
+      },
+      iot: {
+        tag: "IoT & Hardware • Diferenciador",
+        titulo: "03. Proyecto IoT Coyosatélite",
+        tech: ["ESP32", "MQTT", "Sensores Ambientales", "Python / Web", "Telemetría"],
+        desc: "Sistema de monitoreo ambiental pensado para cuartos de comunicaciones o servidores, enviando métricas en tiempo real mediante protocolos ligeros.",
+        puntos: [
+          "Lectura continua de temperatura y humedad con microcontrolador ESP32.",
+          "Publicación de datos hacia un broker MQTT con baja latencia.",
+          "Visualización en panel web y alertas ante umbrales críticos de temperatura."
+        ]
+      }
+    };
+
+    function abrirModal(id) {
+      const p = datosProyectos[id];
+      document.getElementById("modalTag").innerText = p.tag;
+      document.getElementById("modalTitulo").innerText = p.titulo;
+      document.getElementById("modalDesc").innerText = p.desc;
+
+      const techDiv = document.getElementById("modalTech");
+      techDiv.innerHTML = p.tech.map(t => `<span>${t}</span>`).join("");
+
+      const listaUl = document.getElementById("modalLista");
+      listaUl.innerHTML = p.puntos.map(item => `<li>${item}</li>`).join("");
+
+      document.getElementById("proyectoModal").style.display = "flex";
+    }
+
+    function cerrarModal() {
+      document.getElementById("proyectoModal").style.display = "none";
+    }
+
+    function cerrarModalFondo(e) {
+      if (e.target.id === "proyectoModal") cerrarModal();
+    }
+  </script>
+</body>
+</html>
